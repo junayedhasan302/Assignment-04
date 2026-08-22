@@ -17,6 +17,9 @@ const getBatteryStatus = (percentage:number): string => {
     } else return "Full";
 }
 
+
+
+// TEST CASE
 console.log(getBatteryStatus(0));
 console.log(getBatteryStatus(20));
 console.log(getBatteryStatus(21));
