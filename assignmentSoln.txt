@@ -10,16 +10,19 @@ const getBatteryStatus = (percentage:number): string => {
 }
 
 
+
 //Problem-02: Table Booking Confirmation
 interface Booking {
     name: string,
     guests: number,
     time: string
 }
+
 // "Aisha's table for 4 guests is confirmed at 7:00 PM."
 const formatBookingConfirmation = (booking: Booking): string => {
     return `${booking.name}'s table for ${booking.guests} guests is confirmed at ${booking.time}.`;
 };
+
 
 
 //Problem-03: Weekly Expense Tracker
@@ -29,12 +32,21 @@ const calculateWeeklyTotal = (expenses: number[]): number => {
 };
 
 
+
 //Problem-04: Traffic Light Action
-const getTrafficAction = (light:string):string => {
-    if(light==="red") return "Stop";
-    else if(light === "yellow") return "Slow Down";
-    else return "Go";
-};
+type Light = "red" | "yellow" | "green";
+
+const getTrafficAction = (light: Light): string => {
+
+    if (light === "red") {
+        return "Stop";
+    } else if (light === "yellow") {
+        return "Slow Down";
+    } else {
+        return "Go";
+    }
+}
+
 
 
 //Problem-05: Quiz Score Summary
@@ -42,6 +54,7 @@ interface QuizSummary {
     total: number,
     average: number
 }
+
 const getQuizSummary = (scores: number[]): QuizSummary => {
     // For empty array
     if (scores.length === 0) {
