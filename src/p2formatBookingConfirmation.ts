@@ -9,7 +9,6 @@ const formatBookingConfirmation = (booking: Booking): string => {
 };
 
 
-
 // TEST CASE
 const customer1:Booking = {
     name: "Aisha",

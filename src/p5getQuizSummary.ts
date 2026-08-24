@@ -3,11 +3,11 @@
 // [5, 5]          { total: 10, average: 5 }
 // []              { total: 0, average: 0 }
 
+
 interface QuizSummary {
     total: number,
     average: number
 }
-
 const getQuizSummary = (scores: number[]): QuizSummary => {
     // For empty array
     if (scores.length === 0) {
